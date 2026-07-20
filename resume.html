@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - H.M. Thisara Maduwantha Chandrasekara</title>
+  <title>Resume - H.M. Thisara Maduwantha</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,7 +11,7 @@
   <!-- Google Fonts - Poppins & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -22,45 +22,51 @@
     h1, h2, h3, h4 {
       font-family: 'Poppins', sans-serif;
     }
-    /* Optimized Print rules for 1-page CV */
+    
+    /* Optimized Print rules for a flawless 1-page PDF */
     @media print {
+      html {
+        font-size: 13px !important;
+      }
       body {
         background-color: white !important;
         color: black !important;
-        font-size: 10.5pt;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
       .no-print {
         display: none !important;
       }
-      .shadow-md, .shadow-xl {
+      .cv-sheet {
+        border: none !important;
+        border-radius: 0 !important;
         box-shadow: none !important;
-      }
-      .border {
-        border-color: #e2e8f0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
       }
       a {
-        text-decoration: underline !important;
-        color: black !important;
+        text-decoration: none !important;
+        color: #1d4ed8 !important;
       }
-      .page-break {
-        page-break-before: always;
-      }
-      /* Margins configuration */
       @page {
-        margin: 0.5in;
+        size: A4;
+        margin: 0.4in 0.5in 0.4in 0.5in;
       }
     }
   </style>
 </head>
-<body class="py-10 px-4 sm:px-6 lg:px-8">
+<body class="py-8 px-4 sm:px-6 lg:px-8">
 
   <!-- Print floating toolbar -->
   <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print bg-slate-900 text-white p-4 rounded-xl shadow-md">
     <div>
       <h3 class="text-sm font-bold">📄 Professional ATS-Friendly CV</h3>
-      <p class="text-xs text-slate-400">Open in browser and press <b>Ctrl + P</b> to save as PDF</p>
+      <p class="text-xs text-slate-400">Open in browser and press <b>Ctrl + P</b> to save as PDF (Set Margins: Default, and layout: Portrait)</p>
     </div>
-    <button onclick="window.print()" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-all flex items-center gap-1.5">
+    <button onclick="window.print()" class="px-5 py-2 bg-blue-650 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 bg-blue-600">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
       </svg>
@@ -69,57 +75,45 @@
   </div>
 
   <!-- CV Sheet -->
-  <div class="max-w-4xl mx-auto bg-white p-8 sm:p-12 border border-slate-200 rounded-2xl shadow-xl">
+  <div class="cv-sheet max-w-4xl mx-auto bg-white p-8 sm:p-10 border border-slate-200 rounded-xl shadow-md">
     
     <!-- Header -->
-    <header class="border-b-2 border-slate-900 pb-6">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div>
-          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 uppercase">
-            H.M. Thisara Maduwantha
-          </h1>
-          <p class="text-md sm:text-lg font-semibold text-blue-600 tracking-wide mt-1">
-            Software Engineer | Java Backend & Spring Boot Specialist
-          </p>
-        </div>
-        
-        <!-- Contact details -->
-        <div class="text-xs text-slate-600 space-y-1 md:text-right">
-          <p class="flex items-center md:justify-end gap-1.5">
-            <span>thisaramduwantha@gmail.com</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-          </p>
-          <p class="flex items-center md:justify-end gap-1.5">
-            <span>+94 74 034 5931</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 00.96.725h1.54a1 1 0 00.96-.725l.548-2.2a1 1 0 01.94-.725H19a2 2 0 012 2v3a2 2 0 01-2 2h-3.28a1 1 0 00-.94.725l-.548 2.2a1 1 0 01-.96.725h-1.54a1 1 0 01-.96-.725l-.548-2.2a1 1 0 00-.94-.725H5a2 2 0 01-2-2V5z" /></svg>
-          </p>
-          <p class="flex items-center md:justify-end gap-1.5">
-            <span>Bogahagoda, Edarugolla, Boralanda, Sri Lanka</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-          </p>
-        </div>
+    <header class="text-center border-b border-slate-350 pb-4">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 uppercase">
+        H.M. Thisara Maduwantha
+      </h1>
+      <p class="text-sm sm:text-base font-semibold text-blue-600 tracking-wide mt-1">
+        Software Engineer | Java Backend & Spring Boot Specialist
+      </p>
+      
+      <!-- Contact Details -->
+      <div class="mt-3 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-xs text-slate-600">
+        <span>Bogahagoda, Edarugolla, Boralanda, Sri Lanka</span>
+        <span class="text-slate-400 font-light">•</span>
+        <a href="tel:+94740345931" class="hover:text-blue-600 transition-colors">+94 74 034 5931</a>
+        <span class="text-slate-400 font-light">•</span>
+        <a href="mailto:thisaramduwantha@gmail.com" class="hover:text-blue-600 transition-colors">thisaramduwantha@gmail.com</a>
       </div>
 
       <!-- Links Grid -->
-      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 border-t border-slate-100 pt-4 text-xs font-semibold text-blue-600">
-        <a href="https://thisaramduwantha-dev.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 00-2 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-          <span>Portfolio: thisaramduwantha-dev.github.io/portfolio</span>
+      <div class="mt-2 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-xs font-semibold text-blue-600">
+        <a href="https://thisaramduwantha-dev.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+          Portfolio: thisaramduwantha-dev.github.io/portfolio
         </a>
-        <a href="https://github.com/thisaramduwantha-dev" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 00-2 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-          <span>GitHub: github.com/thisaramduwantha-dev</span>
+        <span class="text-slate-400 font-light">•</span>
+        <a href="https://github.com/thisaramduwantha-dev" target="_blank" rel="noopener noreferrer" class="hover:underline">
+          GitHub: github.com/thisaramduwantha-dev
         </a>
-        <a href="https://www.linkedin.com/in/thisaramaduwantha/" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1.5 sm:justify-end">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 00-2 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-          <span>LinkedIn: linkedin.com/in/thisaramaduwantha</span>
+        <span class="text-slate-400 font-light">•</span>
+        <a href="https://www.linkedin.com/in/thisaramaduwantha/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+          LinkedIn: linkedin.com/in/thisaramaduwantha
         </a>
       </div>
     </header>
 
     <!-- Career Objective -->
-    <section class="mt-6">
-      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">
+    <section class="mt-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-1.5">
         Career Objective
       </h2>
       <p class="text-xs text-slate-600 leading-relaxed font-light">
@@ -128,106 +122,113 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="mt-6">
-      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">
+    <section class="mt-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-1.5">
         Technical Skills
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-xs">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs">
         <div>
-          <p class="font-semibold text-slate-800">Backend Development:</p>
-          <p class="text-slate-600 font-light mt-0.5">Java, Spring Boot, PHP, Servlet, JSP, REST API, Spring Security, JWT</p>
+          <span class="font-bold text-slate-700">Backend Development:</span>
+          <span class="text-slate-600 font-light">Java, Spring Boot, PHP, Servlet, JSP, REST API, Spring Security, JWT</span>
         </div>
         <div>
-          <p class="font-semibold text-slate-800">Frontend Development & UI/UX:</p>
-          <p class="text-slate-600 font-light mt-0.5">HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Figma</p>
+          <span class="font-bold text-slate-700">Frontend Development & UI/UX:</span>
+          <span class="text-slate-600 font-light">HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Figma</span>
         </div>
-        <div class="mt-2">
-          <p class="font-semibold text-slate-800">Databases & Clouds:</p>
-          <p class="text-slate-600 font-light mt-0.5">MySQL Database Design & Management, Firebase, SQLite</p>
+        <div>
+          <span class="font-bold text-slate-700">Databases & Clouds:</span>
+          <span class="text-slate-600 font-light">MySQL Database Design & Management, Firebase, SQLite</span>
         </div>
-        <div class="mt-2">
-          <p class="font-semibold text-slate-800">Tools & Platforms:</p>
-          <p class="text-slate-600 font-light mt-0.5">Git, GitHub, IntelliJ IDEA, NetBeans, Android Studio, Postman, Maven, VS Code</p>
+        <div>
+          <span class="font-bold text-slate-700">Tools & Platforms:</span>
+          <span class="text-slate-600 font-light">Git, GitHub, IntelliJ IDEA, NetBeans, Android Studio, Postman, Maven, VS Code</span>
         </div>
       </div>
     </section>
 
     <!-- Education -->
-    <section class="mt-6">
-      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">
+    <section class="mt-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-1.5">
         Education
       </h2>
-      <div class="flex justify-between items-start text-xs">
-        <div>
+      <div class="space-y-1 text-xs">
+        <div class="flex justify-between items-baseline">
           <h3 class="font-bold text-slate-800">Higher National Diploma in Information Technology (HNDIT)</h3>
-          <p class="text-slate-600 font-light mt-0.5">Sri Lanka Institute of Advanced Technological Education (SLIATE) – Badulla Campus</p>
-          <p class="text-slate-500 font-light mt-1">Core Modules: Object-Oriented Programming (Java), DBMS (MySQL), Web & Mobile Application Development, System Analysis & Design</p>
+          <span class="font-semibold text-slate-500 text-right whitespace-nowrap">2023 - Present</span>
         </div>
-        <div class="text-right text-slate-500 flex-shrink-0 ml-4">
-          <p class="font-semibold">2023 - Present</p>
-          <p class="italic">Final Year Undergraduate</p>
+        <div class="flex justify-between items-baseline text-slate-600">
+          <p class="font-medium">Sri Lanka Institute of Advanced Technological Education (SLIATE) – Badulla Campus</p>
+          <span class="italic text-slate-500 text-right whitespace-nowrap">Final Year Undergraduate</span>
         </div>
+        <p class="text-slate-500 font-light mt-0.5 leading-relaxed">
+          Core Modules: Object-Oriented Programming (Java), DBMS (MySQL), Web & Mobile Application Development, System Analysis & Design
+        </p>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="mt-6">
-      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">
+    <section class="mt-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-2">
         Key Projects
       </h2>
-      <div class="space-y-4">
+      <div class="space-y-3.5">
         
         <!-- Project 1 -->
         <div>
-          <div class="flex justify-between items-start text-xs font-semibold">
-            <h3 class="font-bold text-slate-800">Smart Resume Matcher with AI (Java Web App)</h3>
-            <span class="text-slate-500">Java, Servlet, JSP, MySQL, NetBeans</span>
+          <div class="flex flex-wrap justify-between items-baseline text-xs">
+            <h3 class="font-bold text-slate-800">
+              Smart Resume Matcher with AI <span class="font-normal text-slate-500 text-[11px] ml-1.5">— Java, Servlet, JSP, MySQL, NetBeans</span>
+            </h3>
           </div>
-          <p class="text-xs text-slate-600 font-light mt-1 leading-relaxed">
+          <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
             Developed an enterprise-grade AI Recruitment System designed to automate resume parsing and index profile candidates. Engineered a score calculation system (ATS scoring) using text matching logic and built an interactive charts-enabled dashboard with multi-role user authentication.
           </p>
         </div>
 
         <!-- Project 2 -->
         <div>
-          <div class="flex justify-between items-start text-xs font-semibold">
-            <h3 class="font-bold text-slate-800">DigiSales - Premium Digital Assets Store (Spring Boot API)</h3>
-            <span class="text-slate-500">Spring Boot, Spring Security, JWT, MySQL, REST API</span>
+          <div class="flex flex-wrap justify-between items-baseline text-xs">
+            <h3 class="font-bold text-slate-800">
+              DigiSales - Premium Digital Assets Store <span class="font-normal text-slate-500 text-[11px] ml-1.5">— Spring Boot, Spring Security, JWT, MySQL, REST API</span>
+            </h3>
           </div>
-          <p class="text-xs text-slate-600 font-light mt-1 leading-relaxed">
+          <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
             Constructed a backend digital assets storefront equipped with license key management modules. Secured the endpoints utilizing Spring Security and JSON Web Token (JWT) stateless authorization filters.
           </p>
         </div>
 
         <!-- Project 3 -->
         <div>
-          <div class="flex justify-between items-start text-xs font-semibold">
-            <h3 class="font-bold text-slate-800">Smart Inventory Management System with AI</h3>
-            <span class="text-slate-500">Java SE/EE, Servlet, JSP, MySQL, NetBeans</span>
+          <div class="flex flex-wrap justify-between items-baseline text-xs">
+            <h3 class="font-bold text-slate-800">
+              Smart Inventory Management System with AI <span class="font-normal text-slate-500 text-[11px] ml-1.5">— Java SE/EE, Servlet, JSP, MySQL, NetBeans</span>
+            </h3>
           </div>
-          <p class="text-xs text-slate-600 font-light mt-1 leading-relaxed">
+          <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
             Built an inventory logistics administration tool featuring prediction scripts, automatic stock alert prompts, graphical analytics dashboards, and relational schema database indexes.
           </p>
         </div>
 
         <!-- Project 4 -->
         <div>
-          <div class="flex justify-between items-start text-xs font-semibold">
-            <h3 class="font-bold text-slate-800">Medicare Mobile Patient Portal (Android)</h3>
-            <span class="text-slate-500">Android Studio, Java, SQLite, Material UI</span>
+          <div class="flex flex-wrap justify-between items-baseline text-xs">
+            <h3 class="font-bold text-slate-800">
+              Medicare Mobile Patient Portal <span class="font-normal text-slate-500 text-[11px] ml-1.5">— Android Studio, Java, SQLite, Material UI</span>
+            </h3>
           </div>
-          <p class="text-xs text-slate-600 font-light mt-1 leading-relaxed">
+          <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
             Programmed a healthcare assistance app that incorporates local SQLite schema tables, offline data synchronization, medical profiles tracker, appointment schedules, and Material Design UI.
           </p>
         </div>
 
         <!-- Project 5 -->
         <div>
-          <div class="flex justify-between items-start text-xs font-semibold">
-            <h3 class="font-bold text-slate-800">Food Ordering Mobile Application Design</h3>
-            <span class="text-slate-500">Figma, Mobile UI/UX Prototyping</span>
+          <div class="flex flex-wrap justify-between items-baseline text-xs">
+            <h3 class="font-bold text-slate-800">
+              Food Ordering Mobile Application Design <span class="font-normal text-slate-500 text-[11px] ml-1.5">— Figma, Mobile UI/UX Prototyping</span>
+            </h3>
           </div>
-          <p class="text-xs text-slate-600 font-light mt-1 leading-relaxed">
+          <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
             Designed visual layout boards, splash screens, interactive checkout paths, and dynamic screen alignments. Link: <a href="https://www.figma.com/proto/VW3CEz60fAi3FZaSv0f8h0/Untitled?node-id=15-21&starting-point-node-id=2%3A9&t=0cADRgY5upn1hGV8-1" target="_blank" class="text-blue-600 hover:underline">Figma Prototype Link</a>.
           </p>
         </div>
@@ -235,11 +236,11 @@
     </section>
 
     <!-- Certifications -->
-    <section class="mt-6">
-      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">
+    <section class="mt-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-1.5">
         Certifications
       </h2>
-      <ul class="list-disc list-inside text-xs text-slate-600 font-light space-y-1">
+      <ul class="list-disc list-inside text-xs text-slate-650 text-slate-600 font-light space-y-0.5">
         <li><span class="font-semibold text-slate-800">AI/ML Engineer – Stage 1</span> - SLIIT University (Completed: 2025-12-14)</li>
         <li><span class="font-semibold text-slate-800">CAPR Project Development Program</span> - KFHI – Badulla Campus (Completed: 2026)</li>
         <li><span class="font-semibold text-slate-800">Leadership & Personality Development Training</span> - National Youth Corps – Nuwara Eliya (Completed: 2020-03-12)</li>
@@ -247,14 +248,14 @@
     </section>
 
     <!-- Languages & Personal Info -->
-    <section class="mt-6 mb-2">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs border-t border-slate-200 pt-4">
+    <section class="mt-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs border-t border-slate-200 pt-3">
         <div>
-          <h3 class="font-bold text-slate-850 uppercase tracking-wide mb-1">Languages</h3>
+          <h3 class="font-bold text-slate-800 uppercase tracking-wide mb-0.5">Languages</h3>
           <p class="text-slate-600 font-light">Sinhala (Native) | English (Professional Working Proficiency)</p>
         </div>
         <div>
-          <h3 class="font-bold text-slate-850 uppercase tracking-wide mb-1">Personal Details</h3>
+          <h3 class="font-bold text-slate-800 uppercase tracking-wide mb-0.5">Personal Details</h3>
           <p class="text-slate-600 font-light">Date of Birth: Sept 20, 2003 | Nationality: Sri Lankan | Status: Single</p>
         </div>
       </div>
