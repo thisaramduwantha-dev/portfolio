@@ -30,7 +30,7 @@
       }
       body {
         background-color: white !important;
-        color: black !important;
+        color: #1e293b !important;
         padding: 0 !important;
         margin: 0 !important;
         -webkit-print-color-adjust: exact;
@@ -49,7 +49,10 @@
       }
       a {
         text-decoration: none !important;
-        color: #1d4ed8 !important;
+        color: inherit !important;
+      }
+      .print-blue {
+        color: #2563eb !important;
       }
       @page {
         size: A4;
@@ -66,7 +69,7 @@
       <h3 class="text-sm font-bold">📄 Professional ATS-Friendly CV</h3>
       <p class="text-xs text-slate-400">Open in browser and press <b>Ctrl + P</b> to save as PDF (Set Margins: Default, and layout: Portrait)</p>
     </div>
-    <button onclick="window.print()" class="px-5 py-2 bg-blue-650 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 bg-blue-600">
+    <button onclick="window.print()" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-all flex items-center gap-1.5">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
       </svg>
@@ -78,25 +81,25 @@
   <div class="cv-sheet max-w-4xl mx-auto bg-white p-8 sm:p-10 border border-slate-200 rounded-xl shadow-md">
     
     <!-- Header -->
-    <header class="text-center border-b border-slate-350 pb-4">
+    <header class="text-center border-b border-slate-300 pb-4">
       <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 uppercase">
         H.M. Thisara Maduwantha
       </h1>
-      <p class="text-sm sm:text-base font-semibold text-blue-600 tracking-wide mt-1">
+      <p class="text-sm sm:text-base font-semibold text-blue-600 tracking-wide mt-1 print-blue">
         Software Engineer | Java Backend & Spring Boot Specialist
       </p>
       
       <!-- Contact Details -->
-      <div class="mt-3 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-xs text-slate-600">
+      <div class="mt-3 flex flex-wrap justify-center items-center gap-x-5 gap-y-1.5 text-xs text-slate-700">
         <span>Bogahagoda, Edarugolla, Boralanda, Sri Lanka</span>
         <span class="text-slate-400 font-light">•</span>
-        <a href="tel:+94740345931" class="hover:text-blue-600 transition-colors">+94 74 034 5931</a>
+        <a href="tel:+94740345931" class="hover:text-blue-600 transition-colors font-medium">+94 74 034 5931</a>
         <span class="text-slate-400 font-light">•</span>
-        <a href="mailto:thisaramduwantha@gmail.com" class="hover:text-blue-600 transition-colors">thisaramduwantha@gmail.com</a>
+        <a href="mailto:thisaramduwantha@gmail.com" class="hover:text-blue-600 transition-colors font-medium">thisaramduwantha@gmail.com</a>
       </div>
 
       <!-- Links Grid -->
-      <div class="mt-2 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-xs font-semibold text-blue-600">
+      <div class="mt-2 flex flex-wrap justify-center items-center gap-x-5 gap-y-1 text-xs font-semibold text-blue-600 print-blue">
         <a href="https://thisaramduwantha-dev.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="hover:underline">
           Portfolio: thisaramduwantha-dev.github.io/portfolio
         </a>
@@ -117,7 +120,7 @@
         Career Objective
       </h2>
       <p class="text-xs text-slate-600 leading-relaxed font-light">
-        A highly motivated and passionate final year Higher National Diploma in IT (HNDIT) undergraduate student specializing in Java Backend development, Spring Boot frameworks, and database architecture. Eager to launch a career as a Software Engineer Intern / Junior Developer where I can apply my skills in enterprise Java web applications, REST APIs, UI/UX design, and AI integration to build scalable solutions.
+        A motivated and detail-oriented final-year Higher National Diploma in IT (HNDIT) undergraduate specializing in Java Backend development, Spring Boot frameworks, and database architecture. Eager to launch a career as a Software Engineer Intern or Junior Developer, applying skills in enterprise Java web applications, REST APIs, UI/UX design, and AI integration to build scalable solutions.
       </p>
     </section>
 
@@ -136,7 +139,7 @@
           <span class="text-slate-600 font-light">HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Figma</span>
         </div>
         <div>
-          <span class="font-bold text-slate-700">Databases & Clouds:</span>
+          <span class="font-bold text-slate-700">Databases & Cloud Services:</span>
           <span class="text-slate-600 font-light">MySQL Database Design & Management, Firebase, SQLite</span>
         </div>
         <div>
@@ -161,7 +164,7 @@
           <span class="italic text-slate-500 text-right whitespace-nowrap">Final Year Undergraduate</span>
         </div>
         <p class="text-slate-500 font-light mt-0.5 leading-relaxed">
-          Core Modules: Object-Oriented Programming (Java), DBMS (MySQL), Web & Mobile Application Development, System Analysis & Design
+          Core Modules: Object-Oriented Programming (Java), Database Management Systems (DBMS/MySQL), Web & Mobile Application Development, System Analysis & Design
         </p>
       </div>
     </section>
@@ -193,7 +196,7 @@
             </h3>
           </div>
           <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
-            Constructed a backend digital assets storefront equipped with license key management modules. Secured the endpoints utilizing Spring Security and JSON Web Token (JWT) stateless authorization filters.
+            Developed a backend digital assets storefront featuring secure license key management. Secured endpoints utilizing Spring Security and JSON Web Token (JWT) stateless authorization filters.
           </p>
         </div>
 
@@ -205,7 +208,7 @@
             </h3>
           </div>
           <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
-            Built an inventory logistics administration tool featuring prediction scripts, automatic stock alert prompts, graphical analytics dashboards, and relational schema database indexes.
+            Built an inventory logistics administration tool featuring predictive demand forecasting, automated stock alert prompts, graphical analytics dashboards, and relational schema database indexes.
           </p>
         </div>
 
@@ -217,7 +220,7 @@
             </h3>
           </div>
           <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
-            Programmed a healthcare assistance app that incorporates local SQLite schema tables, offline data synchronization, medical profiles tracker, appointment schedules, and Material Design UI.
+            Developed a mobile healthcare app with offline data synchronization utilizing SQLite database storage, medical profiles tracker, appointment schedules, and Material Design UI.
           </p>
         </div>
 
@@ -229,7 +232,7 @@
             </h3>
           </div>
           <p class="text-xs text-slate-600 font-light mt-0.5 leading-relaxed">
-            Designed visual layout boards, splash screens, interactive checkout paths, and dynamic screen alignments. Link: <a href="https://www.figma.com/proto/VW3CEz60fAi3FZaSv0f8h0/Untitled?node-id=15-21&starting-point-node-id=2%3A9&t=0cADRgY5upn1hGV8-1" target="_blank" class="text-blue-600 hover:underline">Figma Prototype Link</a>.
+            Designed interactive wireframes, user experience flows, and high-fidelity mobile mockups in Figma. Created splash screens, checkout paths, and dynamic screen alignments. Link: <a href="https://www.figma.com/proto/VW3CEz60fAi3FZaSv0f8h0/Untitled?node-id=15-21&starting-point-node-id=2%3A9&t=0cADRgY5upn1hGV8-1" target="_blank" class="text-blue-650 hover:underline print-blue">View Figma Prototype</a>.
           </p>
         </div>
       </div>
@@ -240,10 +243,10 @@
       <h2 class="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-0.5 mb-1.5">
         Certifications
       </h2>
-      <ul class="list-disc list-inside text-xs text-slate-650 text-slate-600 font-light space-y-0.5">
-        <li><span class="font-semibold text-slate-800">AI/ML Engineer – Stage 1</span> - SLIIT University (Completed: 2025-12-14)</li>
-        <li><span class="font-semibold text-slate-800">CAPR Project Development Program</span> - KFHI – Badulla Campus (Completed: 2026)</li>
-        <li><span class="font-semibold text-slate-800">Leadership & Personality Development Training</span> - National Youth Corps – Nuwara Eliya (Completed: 2020-03-12)</li>
+      <ul class="list-disc list-inside text-xs text-slate-600 font-light space-y-0.5">
+        <li><span class="font-semibold text-slate-800">AI/ML Engineer (Stage 1)</span> — SLIIT University (Completed: Dec 2025)</li>
+        <li><span class="font-semibold text-slate-800">CAPR Project Development Program</span> — KFHI – Badulla Campus (Completed: 2026)</li>
+        <li><span class="font-semibold text-slate-800">Leadership & Personality Development Training</span> — National Youth Corps – Nuwara Eliya (Completed: Mar 2020)</li>
       </ul>
     </section>
 
